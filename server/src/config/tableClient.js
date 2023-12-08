@@ -5,11 +5,6 @@ const serviceClient = TableClient.fromConnectionString(
 );
 
 const filterEntities = async function (option) {
-  /*
-    You can query data according to existing fields
-    option provides some conditions to query,eg partitionKey, rowKeyDateTimeStart, rowKeyDateTimeEnd
-    minTemperature, maxTemperature, minPrecipitation, maxPrecipitation
-  */
   const filterEntitiesArray = [];
   const filters = [];
   if (option.partitionKey) {
